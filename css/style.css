@@ -24,3 +24,33 @@
 	 width: 20%;
 	 opacity: 0.8;
 }
+.cat{
+	font-family: 'JetBrains Mono', monospace;
+	font-size: 20px;
+}
+.start{
+	text-indent: 40px;
+}
+.large, .medium, .small{
+	font-family: 'Oi', cursive;
+	text-align: center;
+}
+.large{
+	font-size: 40px;
+}
+.medium{
+	font-size: 30px;
+}
+.small{
+	font-size: 15px;
+}
+.askew-1, .askew-2{
+	font-family: 'Comforter Brush', cursive;
+	text-align: center;
+}
+.askew-1{
+	font-size: 35px;
+}
+.askew-2{
+	font-size: 25px;
+}
