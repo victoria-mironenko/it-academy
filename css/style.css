@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family: 'Pushkin';
+    src: url("../fonts/Pushkin.woff2") format('woff2'),
+         url("../fonts/Pushkin.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+.page-container{
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.pushkin{
+	font-family: 'Pushkin';
+	text-align: center;
+	font-size: 1.7em;
+	color: rgb(40, 30, 30);
+	background-image: url(../images/pushkin-fon-1.png);
+	background-size: 25%;
+	background-repeat: no-repeat;
+}
+.line{
+	 width: 20%;
+	 opacity: 0.8;
+}
