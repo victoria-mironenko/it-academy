@@ -1,0 +1,19 @@
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+p{
+	margin: 0;
+	padding: 10vh 10vw;
+	font-size: calc(1.7vh + 1.7vw);
+	line-height: calc(3vh + 3vw);
+}
+
+.text { 
+	width: 100vw;
+	text-align: center;
+	background: url(../images/a.png) no-repeat, url(../images/b.png) no-repeat right top, url(../images/c.png) no-repeat right bottom, url(../images/d.png) no-repeat left bottom, url(../images/e.png) repeat-x top, url(../images/f.png) repeat-y right,  url(../images/g.png) repeat-x bottom, url(../images/h.png) repeat-y left;
+	
+}
