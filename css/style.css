@@ -1,0 +1,41 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+table{
+	border-collapse: collapse;
+}
+h2{
+	color: rgb(58, 72, 247);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+}
+h3{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 800;
+}
+h4{
+	padding: 5px 20px;
+}
+
+img{
+	padding: 30px 30px 0px 30px;
+}
+ul{
+	margin-right: 15px;
+}
+.container{
+	background: url(../images/ball.png) repeat-y right;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+.text-1{
+	padding-right: 30px;
+}
+.text-2{
+	padding-left: 30px;
+}
