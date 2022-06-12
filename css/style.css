@@ -14,3 +14,40 @@ header{
 	background-color: rgb(240, 230, 140);
 	margin-right: 30px;
 }
+h2{
+	color: rgb(58, 72, 247);
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-align: center;
+	padding: 25px;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+h3{
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 800;
+}
+h4{
+	padding: 10px 20px;
+}
+.main{
+	margin-left: 210px;
+	padding-right: 30px;
+}
+li{
+	padding-bottom: 5px;
+}
+img{
+	padding: 5px 30px 30px 0px;
+	float: left;
+}
+footer{
+	clear: both;
+	background-color: rgb(173, 216, 230);
+}	
+.container{
+	max-width: 1100px;
+	margin: 0 auto;
+	background: url(../images/ball.png) repeat-y right;
+}
