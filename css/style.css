@@ -45,3 +45,15 @@ a:hover{
 .flex>ul>li{
 	padding: 3px 4px 15px 0;
 }
+.float>ul>li{
+	float: left;
+	padding: 4px 4px 15px 0;
+}
+.float>ul>li~li::before{
+	content: '';
+	display: inline-block;
+	width: 3px;
+	height: 40px;
+	background: rgb(210, 20, 20);
+	vertical-align: top;
+}
