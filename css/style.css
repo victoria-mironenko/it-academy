@@ -1,0 +1,20 @@
+.full{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.empty{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+img[src*=star0]:hover ~ img[src*=star0], img[src*=star0]:hover{
+	opacity: 0;
+}
