@@ -1,0 +1,40 @@
+:root{
+	--border-color: rgb(50, 220, 100);
+}
+tr:nth-child(odd) td:nth-child(even){
+	background: rgb(30, 30, 30);
+}
+tr:nth-child(even) td:nth-child(odd){
+	background: rgb(30, 30, 30);
+}
+tr:first-of-type, tr:first-of-type td:nth-child(even){
+	background: var(--border-color); 
+}
+tr:last-of-type, tr:last-of-type td:nth-child(odd){
+	background: var(--border-color);
+}
+tr td:first-child{
+	background: var(--border-color);
+}
+tr:nth-child(even) td:first-child{
+	background: var(--border-color);
+}
+tr td:last-child{
+	background: var(--border-color);
+}
+tr:nth-child(odd) td:last-child{
+	background: var(--border-color);
+}
+tr:first-of-type td{
+	height: 15px!important;
+}
+tr:last-of-type td{
+	height: 15px!important;
+}
+tr td:first-child{
+	width: 15px!important;
+}
+tr td:last-child{
+	width: 15px!important;
+}
+
