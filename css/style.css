@@ -97,9 +97,11 @@ img {
     main {
         flex-direction: column;
     }
-    .main-menu ul{
+
+    .main-menu ul {
         padding-left: 12vw;
     }
+
     .main-menu li {
         padding: 0 2vw 4vh 2vw;
     }
