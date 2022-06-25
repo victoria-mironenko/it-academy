@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1vh 1vw;
+}
+
+input[type=text] {
+    width: 76vw;
+    font-size: 20px;
+    padding: .7vh 1vw;
+    margin: .6vw;
+
+}
+
+textarea {
+    width: 93vw;
+    padding: .7vh 1vw;
+    margin: .6vw .6vw 0 0;
+}
+
+select {
+    width: 40vw;
+    padding: .7vh 1vw;
+    margin: .6vw;
+    font-size: 20px;
+}
+
+input[type=radio] {
+    margin-left: 5vw;
+}
+
+button {
+    font-size: 20px;
+    padding: .7vh 1vw;
+}
+
+label {
+    display: inline-block;
+    width: 180px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+    }
+
+    .width {
+        margin-right: 35px;
+        margin-left: 0;
+    }
+
+    .select {
+        margin-right: 20px;
+    }
+
+    span {
+        display: block;
+
+    }
+}
