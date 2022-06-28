@@ -1,0 +1,196 @@
+.container {
+    width: 1100px;
+    height: 840px;
+    margin: 20px auto;
+    border: 5px double rgb(100, 200, 200);
+    border-radius: 15px;
+    background-color: rgb(50, 70, 200);
+    position: relative;
+}
+
+h1 {
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.content {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    border: 5px double rgb(60, 170, 10);
+    border-radius: 15px;
+    margin: 40px 0px 0px 40px;
+    position: absolute;
+    top: 250px;
+}
+
+.trap {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    border: 5px double rgb(60, 10, 160);
+    border-radius: 15px;
+    margin: 40px 40px 0px 0px;
+    position: absolute;
+    right: 10px;
+    top: 250px;
+}
+
+.content__circle {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(240, 255, 30);
+    border-radius: 10%;
+    position: relative;
+    left: 0;
+    z-index: 5;
+    animation-name: yellow-circle;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.avia {
+    position: absolute;
+    top: 240px;
+    z-index: 1;
+    animation-name: airplane;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.avia-1 {
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    z-index: 1;
+    animation-name: airplane-1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.container:hover .avia {
+    animation-play-state: running;
+}
+
+.container:hover .avia-1 {
+    animation-play-state: running;
+}
+
+.color {
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 55px solid rgb(230, 200, 100);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: ellipse(50% 24% at 50% 50%);
+    animation-name: skew;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+.container:hover .color {
+    animation-play-state: running;
+}
+
+@keyframes yellow-circle {
+    0% {
+        left: 0;
+    }
+
+    25% {
+        top: -30px;
+        transform: scale(120%);
+    }
+
+    50% {
+        border-radius: 50%;
+        top: 140px;
+        background-color: rgb(200, 60, 60);
+        transform: scale(60%);
+    }
+
+    75% {
+        top: -30px;
+        transform: scale(120%);
+    }
+
+    100% {
+        left: 915px;
+        background-color: rgb(60, 170, 10);
+    }
+}
+
+@keyframes airplane {
+    0% {
+        left: 0;
+    }
+
+    30% {
+        top: -10px;
+    }
+
+    50% {
+        top: 60px;
+        transform: rotate(20deg);
+        transform: scale(50%);
+    }
+
+    70% {
+        top: -10px;
+    }
+
+    100% {
+        left: 930px;
+    }
+}
+
+@keyframes airplane-1 {
+    0% {
+        right: 0;
+    }
+
+    25% {
+        top: -25px;
+    }
+
+    50% {
+        top: 200px;
+        transform: rotate(20deg);
+        transform: scale(50%);
+    }
+
+    75% {
+        top: -25px;
+    }
+
+    100% {
+        right: 930px;
+    }
+}
+
+@keyframes skew {
+    25% {
+        transform: scale(1, -1);
+    }
+
+    50% {
+        transform: rotate(360deg);
+        background-color: rgb(120, 190, 60);
+    }
+
+    75% {
+        transform: scale(-1, 1);
+    }
+}
