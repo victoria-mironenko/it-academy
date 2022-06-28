@@ -1,0 +1,27 @@
+.container {
+    background: rgb(220, 240, 250);
+    width: 1000px;
+    height: 700px;
+    margin: 20px auto;
+    border: 3px solid rgb(170, 10, 30);
+    border-radius: 20px;
+}
+
+.tube:hover {
+    fill: rgb(170, 10, 30) !important;
+    transform: scale(150%) !important;
+}
+
+.roof:hover {
+    fill: rgb(170, 110, 230) !important;
+    transform:  !important;
+}
+
+.wall:hover {
+    fill: rgb(210, 210, 30) !important;
+}
+
+.window:hover {
+    fill: rgb(10, 210, 30) !important;
+    transform: translate(0, 60px) !important;
+}
