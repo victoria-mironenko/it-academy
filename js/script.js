@@ -2,7 +2,7 @@
 let userName = prompt('Ваше имя');
 userFatherName = prompt('Ваше отчество');
 userSurName = prompt('Ваша фамилия');
-user = userName + ' ' + userFatherName + ' ' + userSurName; userGender = ('женский');
+user = userName + ' ' + userFatherName + ' ' + userSurName; 
 userAge = prompt('Ваш возраст в годах');
 userGender = confirm('Ваш пол - мужской?');
 
