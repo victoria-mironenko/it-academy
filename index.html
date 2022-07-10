@@ -11,35 +11,46 @@
 
 <body>
     <div class="container">
-        <p>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</p>
+        <h4>Для публикации вашей статьи заполните, пожалуйста, следующую форму:</h4>
         <form action="#">
-            <div class="width">
+            <div class="form__row">
                 <label for="title">Название статьи:</label>
                 <input type="text" name="article title" id="title">
             </div>
-            <div class="width select">
-                <p><label for="head">Рубрика:</label>
-                    <select name="heading" id="head">
-                        <option value="computer technology">компьютерная техника</option>
-                        <option value="graphics and design">графика и дизайн</option>
-                        <option selected value="programming">программирование</option>
-                    </select>
-                </p>
+            <div class="form__row">
+                <label for="head">Рубрика:</label>
+                <select name="heading" id="head">
+                    <option value="computer technology">компьютерная техника</option>
+                    <option value="graphics and design">графика и дизайн</option>
+                    <option selected value="programming">программирование</option>
+                </select>
             </div>
-            <div class="width">
-                <p> Публикация:
-                    <span><input type="radio" name="publication" value="on the site">на сайте</span>
-                    <span><input type="radio" name="publication" value="in the magazine">в журнале</span>
-                    <span><input type="radio" name="publication" value="both">на сайте и в журнале</span>
-                </p>
+            <div class="form__row radio">
+                <p>Публикация:</p>
+
+                <div class="form__radio-button">
+                    <input type="radio" id="publication1" name="publication" value="site">
+                    <label for="publication1">на сайте</label>
+                </div>
+                <div class="form__radio-button">
+                    <input type="radio" id="publication2" name="publication" value="magazine">
+                    <label for="publication2">в журнале</label>
+                </div>
+
+                <div class="form__radio-button">
+                    <input type="radio" id="publication3" name="publication" value="site and magazine">
+                    <label for="publication3">на сайте и в журнале</label>
+                </div>
+
+
             </div>
-            <div class="width">Разрешить комментарии:
-                <input checked type="checkbox" name="comments" value="yes">
+            <div class="form__box">
+                <label for="comments">Разрешить комментарии:</label>
+                <input checked type="checkbox" name="comments" value="yes" id="comments">
             </div>
-            <div class="width">
-                <p>Текст статьи:<br>
-                    <textarea name="article" rows="3"></textarea>
-                </p>
+            <div class="form__text">
+                <label for="article">Текст статьи:</label>
+                <textarea name="article" id="article"></textarea>
             </div>
             <button type="submit">Опубликовать</button>
         </form>
